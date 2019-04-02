@@ -1,15 +1,11 @@
 <template lang="jade">
 div.sidebar
-  a.active.main Войти&nbsp;&nbsp;&nbsp;&#8594;
+  div.active.main Войти&nbsp;&nbsp;&nbsp;&#8594;
   div.bar
-    a {{ greeting }}
-    hr
+    div {{ greeting }}
     a Ж/Д Авиабилеты
-    hr
     a Гостиницы
-    hr
     a Страхование
-    hr
     a Трансфер
 </template>
 
@@ -27,37 +23,49 @@ div.sidebar
 .sidebar
   font-family: SegoeUI
   font-size: 12px
-  flex-basis: 254px
+  min-width: 12%
+  min-height: 966px
   border-left: 1px solid #c5c5c5
-  height: 966px
   align-items: flex-end
 
-hr
-  position: relative
-  top: 89px
-  left: 45px
-  margin-left: 0
-  width: 5%
-  margin-bottom: 15%
-
-
-.bar
-  position: relative
-  top: 171px
+@media screen and (max-width: 1280px)
+  .sidebar
+    font-size: 11px
+    min-width: 175px
 
 a
   position: relative
-  top: 92px
-  left: 45px
+  top: 235px
+  left: 11px
   color: #c5c5c5
   display: flex
   flex-direction: column
-  padding-bottom: 14%
+  padding: 17%
 
-  &.active
-    color: #00aeef
-    padding-bottom: 14px
-    text-decoration: none
-    cursor: pointer
+.main
+  position: relative
+  top: 92px
+  left: 45px
 
+.bar div
+  position: relative
+  top: 231px
+  left: 15px
+  color: #c5c5c5
+  display: flex
+  flex-direction: column
+  padding: 14%
+
+.bar a:before
+  position: absolute
+  top: 0
+  width: 5%
+  border-top: 1px solid #c5c5c5
+  content: ""
+
+.active
+  color: #00aeef
+  padding-bottom: 14px
+  text-decoration: none
+  cursor: pointer
 </style>

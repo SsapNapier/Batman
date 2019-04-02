@@ -27,7 +27,6 @@ body
 .container
   display: flex
 
-
 #menu
   position: relative
   top: 89px
@@ -41,14 +40,18 @@ body
     width: 42%
     height: 1px
     background: #c5c5c5
-    margin-right: 60px
+
+@media screen and (max-width: 1280px)
+  #menu:before
+    width: 44%
+    margin-right: 14px
 
 nuxt-link
   font-family: SegoeUI
   font-size: 12px
   color: #c5c5c5
-  cursor:pointer
-  margin-right: 3%
+  cursor: pointer
+  margin-left: 50px
 
   &:hover
     color: #00aeef
@@ -61,4 +64,8 @@ nuxt-link
     border-bottom: 1px solid #00aeef
     padding-bottom: 14px
     text-decoration: none
+@media screen and (max-width: 1280px)
+  nuxt-link
+    margin-left: 40px
+    font-size: 64%
 </style>

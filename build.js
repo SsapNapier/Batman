@@ -10564,7 +10564,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0 auto;\n  background: #1a1a1a; }\n\n.container {\n  display: -ms-flexbox;\n  display: flex; }\n\n#menu {\n  position: relative;\n  top: 89px;\n  -ms-flex-preferred-size: 100%;\n      flex-basis: 100%; }\n  #menu:before {\n    content: \"\";\n    display: inline-block;\n    vertical-align: middle;\n    box-sizing: border-box;\n    width: 42%;\n    height: 1px;\n    background: #c5c5c5;\n    margin-right: 60px; }\n\nnuxt-link {\n  font-family: SegoeUI;\n  font-size: 12px;\n  color: #c5c5c5;\n  margin-right: 3%; }\n  nuxt-link:hover {\n    color: #00aeef;\n    border-bottom: 1px solid #00aeef;\n    padding-bottom: 14px;\n    text-decoration: none; }\n  nuxt-link.active {\n    color: #00aeef;\n    border-bottom: 1px solid #00aeef;\n    padding-bottom: 14px;\n    text-decoration: none; }\n", ""]);
+	exports.push([module.id, "body {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0 auto;\n  background: #1a1a1a; }\n\n.container {\n  display: -ms-flexbox;\n  display: flex; }\n\n#menu {\n  position: relative;\n  top: 89px;\n  -ms-flex-preferred-size: 100%;\n      flex-basis: 100%; }\n  #menu:before {\n    content: \"\";\n    display: inline-block;\n    vertical-align: middle;\n    box-sizing: border-box;\n    width: 42%;\n    height: 1px;\n    background: #c5c5c5; }\n\n@media screen and (max-width: 1280px) {\n  #menu:before {\n    width: 44%;\n    margin-right: 14px; } }\n\nnuxt-link {\n  font-family: SegoeUI;\n  font-size: 12px;\n  color: #c5c5c5;\n  cursor: pointer;\n  margin-left: 50px; }\n  nuxt-link:hover {\n    color: #00aeef;\n    border-bottom: 1px solid #00aeef;\n    padding-bottom: 14px;\n    text-decoration: none; }\n  nuxt-link.active {\n    color: #00aeef;\n    border-bottom: 1px solid #00aeef;\n    padding-bottom: 14px;\n    text-decoration: none; }\n\n@media screen and (max-width: 1280px) {\n  nuxt-link {\n    margin-left: 40px;\n    font-size: 64%; } }\n", ""]);
 
 	// exports
 
@@ -10931,7 +10931,7 @@
 
 
 	// module
-	exports.push([module.id, ".sidebar {\n  font-family: SegoeUI;\n  font-size: 12px;\n  -ms-flex-preferred-size: 254px;\n      flex-basis: 254px;\n  border-left: 1px solid #c5c5c5;\n  height: 966px;\n  -ms-flex-align: end;\n      align-items: flex-end; }\n\nhr {\n  position: relative;\n  top: 89px;\n  left: 45px;\n  margin-left: 0;\n  width: 5%;\n  margin-bottom: 15%; }\n\n.bar {\n  position: relative;\n  top: 171px; }\n\na {\n  position: relative;\n  top: 92px;\n  left: 45px;\n  color: #c5c5c5;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-direction: column;\n      flex-direction: column;\n  padding-bottom: 14%; }\n  a.active {\n    color: #00aeef;\n    padding-bottom: 14px;\n    text-decoration: none;\n    cursor: pointer; }\n", ""]);
+	exports.push([module.id, ".sidebar {\n  font-family: SegoeUI;\n  font-size: 12px;\n  min-width: 12%;\n  min-height: 966px;\n  border-left: 1px solid #c5c5c5;\n  -ms-flex-align: end;\n      align-items: flex-end; }\n\n@media screen and (max-width: 1280px) {\n  .sidebar {\n    font-size: 11px;\n    min-width: 175px; } }\n\na {\n  position: relative;\n  top: 235px;\n  left: 11px;\n  color: #c5c5c5;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-direction: column;\n      flex-direction: column;\n  padding: 17%; }\n\n.main {\n  position: relative;\n  top: 92px;\n  left: 45px; }\n\n.bar div {\n  position: relative;\n  top: 231px;\n  left: 15px;\n  color: #c5c5c5;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-direction: column;\n      flex-direction: column;\n  padding: 14%; }\n\n.bar a:before {\n  position: absolute;\n  top: 0;\n  width: 5%;\n  border-top: 1px solid #c5c5c5;\n  content: \"\"; }\n\n.active {\n  color: #00aeef;\n  padding-bottom: 14px;\n  text-decoration: none;\n  cursor: pointer; }\n", ""]);
 
 	// exports
 
@@ -10954,7 +10954,7 @@
 /* 14 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"sidebar\"><a class=\"active main\">Войти&nbsp;&nbsp;&nbsp;&#8594;</a><div class=\"bar\"><a>{{ greeting }}</a><hr/><a>Ж/Д Авиабилеты</a><hr/><a>Гостиницы</a><hr/><a>Страхование</a><hr/><a>Трансфер</a></div></div>";
+	module.exports = "<div class=\"sidebar\"><div class=\"active main\">Войти&nbsp;&nbsp;&nbsp;&#8594;</div><div class=\"bar\"><div>{{ greeting }}</div><a>Ж/Д Авиабилеты</a><a>Гостиницы</a><a>Страхование</a><a>Трансфер</a></div></div>";
 
 /***/ }
 /******/ ]);
